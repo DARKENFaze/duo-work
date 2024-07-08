@@ -1,0 +1,208 @@
+.row {
+  .section-title {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #212529;
+  }
+
+  .section-description {
+    color: #6c757d;
+    margin-top: 1rem;
+  }
+
+  .img-fluid {
+    border-radius: 0.5rem;
+  }
+}
+
+//
+
+.who-we-are-container {
+  margin-top: 50px;
+}
+
+.content-box {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #6c757d;
+  }
+}
+
+.image-box {
+  text-align: center;
+  margin-top: 30px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+//
+
+.who-we-are {
+  margin-top: 50px;
+}
+
+.content-row {
+  @extend .row;
+}
+
+.content-column {
+  @extend .col-md-6;
+}
+
+.content-box {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #6c757d;
+  }
+}
+
+.image-row {
+  @extend .row;
+}
+
+.image-column {
+  @extend .col-md-12;
+}
+
+.image-box {
+  text-align: center;
+  margin-top: 30px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.team-row {
+  text-align: center;
+  margin-top: 50px;
+
+  .team-heading {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .team-member {
+    @extend .col-md-3;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #6c757d;
+      margin-bottom: 15px;
+    }
+
+    .social-links {
+      a {
+        color: #007bff;
+        margin: 0 10px;
+        font-size: 18px;
+
+        &:hover {
+          color: #0056b3;
+        }
+      }
+    }
+  }
+}
+
+//
+
+$primary-color: #6c63ff;
+$secondary-color: #f8f9fa;
+$text-color: #6c757d;
+
+.custom-container {
+  background-color: $secondary-color;
+  font-family: Arial, sans-serif;
+}
+
+.custom-heading {
+  color: $primary-color;
+}
+
+.team-member {
+  .custom-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  .custom-name {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .custom-role {
+    font-size: 1rem;
+    color: $text-color;
+  }
+
+  .custom-social-icons {
+    margin-top: 10px;
+
+    a {
+      color: $primary-color;
+      margin: 0 5px;
+      font-size: 1.25rem;
+    }
+  }
+}
