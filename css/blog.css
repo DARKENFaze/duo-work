@@ -40,7 +40,6 @@
   left: 697px;
   gap: 0px;
   opacity: 0px;
-  padding: 50px 30px;
 }
 
 .people {
@@ -53,7 +52,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
 }
 
 .level {
@@ -98,15 +96,23 @@
   gap: 100px;
   padding: 50px;
 }
-.eng_katta_ota .card-text {
+
+.card-text {
+  font-size: 20px;
+}
+
+.Posted {
   font-family: Poppins;
-  font-size: 15px;
-  font-weight: 400;
-  text-align: left;
-  width: 404px;
-  height: 108px;
-  top: 1678px;
-  left: 162px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  width: 228px;
+  height: 28px;
+  top: 364px;
+  left: 697px;
   gap: 0px;
   opacity: 0px;
+  margin: auto;
+  display: flex;
 }
