@@ -1,0 +1,89 @@
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as var;
+@use "../components/button" as mxnBtn;
+@use "../layout/grid" as mxnGrid;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var.$background-color;
+}
+
+.projects {
+  text-align: center;
+  padding: 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-color;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    .project-item {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      flex: 1 1 calc(33.333% - 1rem);
+      max-width: calc(33.333% - 1rem);
+      min-width: 300px;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .project-info {
+        padding: 1rem;
+
+        h2 {
+          font-size: 1.5rem;
+          color: $primary-color;
+          margin: 0.5rem 0;
+        }
+
+        p {
+          color: $secondary-color;
+          margin: 0.5rem 0;
+        }
+
+        a {
+          display: inline-block;
+          margin-top: 1rem;
+          color: $link-color;
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    .project-item {
+      flex: 1 1 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    .project-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+}
